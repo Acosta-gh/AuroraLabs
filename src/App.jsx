@@ -1,4 +1,4 @@
-import { Construction, Hammer, ArrowRight } from 'lucide-react'
+import { Construction, Hammer, ArrowRight } from "lucide-react";
 
 function App() {
   return (
@@ -9,7 +9,10 @@ function App() {
           <div className="relative">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
             <div className="relative bg-primary/10 p-6 rounded-full border border-primary/20">
-              <Construction className="w-16 h-16 text-primary" strokeWidth={1.5} />
+              <Construction
+                className="w-16 h-16 text-primary"
+                strokeWidth={1.5}
+              />
             </div>
           </div>
         </div>
@@ -31,17 +34,24 @@ function App() {
             <span>Construcción en progreso</span>
           </div>
           <div className="max-w-xs mx-auto h-2 bg-secondary rounded-full overflow-hidden">
-            <div className="h-full bg-primary rounded-full animate-pulse" style={{ width: '15%' }}></div>
+            <div
+              className="h-full bg-primary rounded-full animate-pulse"
+              style={{ width: "15%" }}
+            ></div>
           </div>
         </div>
 
         {/* Footer */}
         <div className="pt-8 text-sm text-muted-foreground">
-          <p>© 2026 - Todos los derechos reservados</p>
+          <p>
+            AuroraLabs es un emprendimiento digital operado por Cristian Darío
+            Acosta. Página creada y administrada por Cristian Darío Acosta.
+            Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
