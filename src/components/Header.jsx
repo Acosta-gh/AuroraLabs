@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 import logo from "@/assets/logo.png";
 
 function Header() {
@@ -27,7 +29,7 @@ function Header() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <a href="#inicio" className="flex items-center gap-2.5 group cursor-pointer">
+                        <Link to="/" className="flex items-center gap-2.5 group cursor-pointer">
                             <div className="relative">
                                 {/* Glow effect on hover */}
                                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300"></div>
@@ -40,14 +42,14 @@ function Header() {
                                     />
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-1">
-                        <a href="#inicio" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <Link to="/" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                             Inicio
-                        </a>
+                        </Link>
                         <a href="#servicios" className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                             Servicios
                         </a>

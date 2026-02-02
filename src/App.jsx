@@ -10,7 +10,8 @@ import MainLayout from "@/components/layout/MainLayout";
 // ===============================================================
 import NotFound from "@/pages/NotFound";
 import InDevelopment from "@/pages/InDevelopment";
-
+import Home from "@/pages/Home";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 
 const MAINTENANCE_MODE = true;
 let constructionProgress = 15;
@@ -20,11 +21,14 @@ function App() {
     <>
       <HashRouter>
         <Routes>
+          
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+
           {MAINTENANCE_MODE ? (
             <Route path="*" element={<InDevelopment constructionProgress={constructionProgress} />} />
           ) : (
             <Route element={<MainLayout />}>
-              <Route index element={<div>Home</div>} />
+              <Route index element={<Home />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           )}

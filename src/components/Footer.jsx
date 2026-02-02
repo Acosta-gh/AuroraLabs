@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -49,6 +50,12 @@ function Footer() {
                         <p className="text-xs text-gray-500 dark:text-gray-500 flex items-center justify-center gap-1.5">
                             © {new Date().getFullYear()} AuroraLabs. Todos los derechos reservados.
                         </p>
+                    </div>
+                    {/* Privacy */}
+                    <div className="pt-4">
+                        <Link to="/privacy" className="text-xs text-gray-500 dark:text-gray-500 flex items-center justify-center gap-1.5">
+                            Política de Privacidad
+                        </Link>
                     </div>
                 </div>
             </div>
