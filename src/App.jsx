@@ -13,7 +13,7 @@ import InDevelopment from "@/pages/InDevelopment";
 import Home from "@/pages/Home";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 let constructionProgress = 15;
 
 function App() {
