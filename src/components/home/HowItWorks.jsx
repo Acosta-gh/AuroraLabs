@@ -35,10 +35,10 @@ function HowItWorks() {
         <section className="py-20 lg:py-28 relative overflow-hidden">
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent pointer-events-none"></div>
-            
+
             <div className="container mx-auto px-6 relative">
                 <div className="max-w-5xl mx-auto">
-                    
+
                     {/* Header */}
                     <Fade triggerOnce direction="up" cascade damping={0.1}>
                         <div className="text-center space-y-4 mb-16">
@@ -55,29 +55,28 @@ function HowItWorks() {
                     <Fade triggerOnce cascade damping={0.15} delay={200}>
                         <div className="grid md:grid-cols-2 gap-8 mb-12">
                             {steps.map((step, index) => {
-                                const Icon = step.icon;
                                 return (
-                                    <div 
+                                    <div
                                         key={index}
                                         className="group relative"
                                     >
                                         {/* Hover glow */}
                                         <div className="absolute inset-0 bg-primary/5 rounded-xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300"></div>
-                                        
+
                                         <div className="relative bg-background rounded-xl p-8 border border-border/50 hover:border-border transition-all duration-300 hover:shadow-sm">
-                                            {/* Number badge */}
+                                            {/* Icon container */}
                                             <div className="flex items-start gap-6">
                                                 <div className="flex-shrink-0">
                                                     <div className="relative">
-                                                        <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
-                                                            <Icon className="h-6 w-6 text-primary" />
+                                                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                                                            <step.icon className="h-6 w-6 text-primary" />
                                                         </div>
-                                                        <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold">
+                                                        <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold">
                                                             {step.number}
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div className="space-y-2 pt-2">
                                                     <h3 className="font-semibold text-xl text-foreground">
                                                         {step.title}

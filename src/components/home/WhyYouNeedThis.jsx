@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { AlertCircle, ArrowRight } from 'lucide-react';
+import { AlertCircle, ArrowRight, Smartphone, Monitor, DollarSign } from 'lucide-react';
 import { Fade } from "react-awesome-reveal";
 
 function WhyYouNeedThis() {
@@ -8,22 +8,26 @@ function WhyYouNeedThis() {
         {
             problem: "Te buscan y no te encuentran",
             impact: "Tus competidores aparecen primero en Google",
-            stat: "70% de la gente busca online antes de comprar"
+            stat: "70% de la gente busca online antes de comprar",
+            icon: AlertCircle,
         },
         {
             problem: "Tu web se ve mal en celulares",
             impact: "El 80% de tus visitas vienen del celular",
-            stat: "Se van en menos de 3 segundos"
+            stat: "Se van en menos de 3 segundos",
+            icon: Smartphone,
         },
         {
             problem: "No sabés si tu web funciona",
             impact: "Sin datos, sin mejoras, sin crecimiento",
-            stat: "La mayoría pierde ventas y no lo sabe"
+            stat: "La mayoría pierde ventas y no lo sabe",
+            icon: Monitor,
         },
         {
             problem: "Pagaste caro y no viste resultados",
             impact: "Diseño lindo, cero consultas nuevas",
-            stat: "El 60% de las webs no generan ROI"
+            stat: "El 60% de las webs no generan ROI",
+            icon: DollarSign,
         }
     ];
 
@@ -72,17 +76,18 @@ function WhyYouNeedThis() {
                                 >
                                     <div className="absolute inset-0 bg-primary/5 rounded-lg opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300"></div>
 
-                                    <div className="relative flex flex-col gap-3 p-6 bg-background rounded-lg border border-border/50 hover:border-border transition-all duration-300 hover:shadow-sm">
-                                        <div className="flex items-start gap-3">
-                                            <AlertCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                                            <p className="font-semibold text-foreground">
-                                                {issue.problem}
-                                            </p>
+                                    <div className="relative bg-background rounded-lg p-6 border border-border/50 hover:border-border transition-all duration-300 hover:shadow-sm">
+                                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                                            <issue.icon className="h-6 w-6 text-primary" />
                                         </div>
-                                        <p className="text-sm text-muted-foreground pl-8">
+
+                                        <p className="font-semibold text-foreground mb-3">
+                                            {issue.problem}
+                                        </p>
+                                        <p className="text-sm text-muted-foreground mb-2">
                                             {issue.impact}
                                         </p>
-                                        <p className="text-xs text-primary font-medium pl-8">
+                                        <p className="text-xs text-primary font-medium">
                                             → {issue.stat}
                                         </p>
                                     </div>
