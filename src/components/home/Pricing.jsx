@@ -6,58 +6,64 @@ import { Fade } from "react-awesome-reveal";
 function Pricing() {
     const plans = [
         {
-            name: "Pago Único",
-            tagline: "Para quienes quieren autonomía total",
-            price: "Solo el proyecto",
-            priceDetail: "Sin costos recurrentes",
+            name: "Plan Landing",
+            tagline: "Presencia profesional y rápida",
+            price: "$XX.XXX",
+            priceDetail: "/mes",
             features: [
-                "Desarrollo completo de tu web",
-                "Capacitación para que edites vos",
-                "Hosting y dominio a tu nombre",
-                "Soporte 30 días post-entrega",
+                "Desarrollo de Landing Page a medida",
+                "Hosting de alta velocidad + Dominio incluido",
+                "Certificado SSL de seguridad (HTTPS)",
+                "1 Cambio de contenido mensual",
+                "Botón de WhatsApp configurado",
+                "Alta en Google Maps (My Business)",
+                "Soporte técnico por WhatsApp"
             ],
             notIncluded: [
-                "Sin mantenimiento mensual",
-                "Cambios futuros se cobran aparte"
+                "Sin panel de carga de productos",
+                "Sin reportes de métricas"
             ],
-            cta: "Consultar proyecto",
+            cta: "Empezar ahora",
             variant: "outline"
         },
         {
-            name: "Mantenimiento Básico",
-            tagline: "Para cambios ocasionales",
+            name: "Plan Empresa",
+            tagline: "Promo: 30% OFF primer mes",
             price: "$XX.XXX",
             priceDetail: "/mes",
             popular: true,
             features: [
-                "Todo del plan anterior +",
-                "2 cambios mensuales incluidos",
-                "Actualizaciones de seguridad",
-                "Soporte prioritario por WhatsApp",
-                "Backup semanal automático"
+                "Todo el Plan Landing +",
+                "Web Institucional (hasta 5 secciones)",
+                "3 Cambios de contenido mensuales",
+                "Correos corporativos (info@tuempresa)",
+                "Optimización de velocidad permanente",
+                "Backups semanales automáticos",
+                "🎁 Bono: Diseño de 2 banners promocionales"
             ],
             notIncluded: [
-                "No incluye rediseños completos",
-                "Cambios complejos se evalúan aparte"
+                "Sin carrito de compras"
             ],
-            cta: "Elegir este plan",
+            cta: "Elegir Promo Primer Cliente",
             variant: "default"
         },
         {
-            name: "Mantenimiento Pro",
-            tagline: "Para negocios en crecimiento",
+            name: "Plan E-commerce",
+            tagline: "Tu tienda abierta 24/7",
             price: "$XX.XXX",
             priceDetail: "/mes",
             features: [
-                "Todo del plan anterior +",
-                "5 cambios mensuales incluidos",
-                "Análisis mensual de performance",
-                "Ajustes de SEO y velocidad",
-                "Reporte de tráfico y consultas",
-                "1 hora de consultoría estratégica/mes"
+                "Todo el Plan Empresa +",
+                "Tienda Online con Carrito",
+                "Carga inicial de productos",
+                "Integración con Mercado Pago / Tarjetas",
+                "Cambios ilimitados en catálogo",
+                "Capacitación para gestión de stock",
+                "Reporte mensual de visitas y ventas",
+                "Soporte Prioritario VIP"
             ],
             notIncluded: [],
-            cta: "Consultar este plan",
+            cta: "Lanzar mi Tienda",
             variant: "outline"
         }
     ];
@@ -88,8 +94,8 @@ function Pricing() {
                                 <div
                                     key={index}
                                     className={`relative bg-background rounded-xl p-8 border transition-all hover:shadow-lg ${plan.popular
-                                            ? 'border-primary shadow-md scale-105 md:scale-105'
-                                            : 'border-border/50 hover:border-border'
+                                        ? 'border-primary shadow-md scale-105 md:scale-105'
+                                        : 'border-border/50 hover:border-border'
                                         }`}
                                 >
                                     {plan.popular && (

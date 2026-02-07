@@ -7,32 +7,28 @@ function FAQ() {
 
     const faqs = [
         {
-            question: "¿Cuánto tiempo demora el proyecto?",
-            answer: "Landing pages: 1 semana. Webs institucionales: 2-3 semanas. E-commerce: 3-4 semanas. Estos tiempos se cumplen siempre que el contenido (textos y fotos) esté listo. Trabajo con revisiones constantes para que no haya sorpresas al final."
+            question: "¿En cuánto tiempo tendré mi web lista?",
+            answer: "Trabajo con procesos ágiles: Landing Pages en 1 semana, Webs Institucionales en 2-3 y E-commerce en 4 semanas. La clave es el trabajo en equipo; si el contenido está listo, los plazos se cumplen a rajatabla con revisiones semanales para que el resultado sea exactamente lo que esperás."
         },
         {
-            question: "¿Voy a aparecer primero en Google?",
-            answer: "Cualquiera que te prometa el puesto #1 en una semana te está mintiendo. Lo que yo te entrego es una web técnicamente perfecta: rápida, segura y con código que Google ama. Eso te da la mejor base para posicionar. Si después querés hacer campañas pagas o SEO avanzado, lo podemos charlar."
+            question: "¿Mi web va a aparecer en los primeros resultados de Google?",
+            answer: "Cualquiera que te prometa el puesto #1 en una semana te está mintiendo. Lo que yo te entrego es una web técnicamente impecable: rápida, segura y con una estructura que a Google le encanta. Esa es la base indispensable para posicionar. Si más adelante buscás escalar con campañas pagas o SEO avanzado, lo charlamos, pero empezás con el pie derecho."
         },
         {
-            question: "¿Puedo modificar la web yo mismo después?",
-            answer: "Si es un E-commerce, sí: vas a poder cargar productos y precios fácilmente. Si es una web institucional o landing, trabajo con código puro (sin WordPress lento) para garantizar velocidad. En ese caso, los cambios de textos o fotos me los pedís a mí y los hago en minutos. Zapatero a sus zapatos: vos vendés, yo programo."
+            question: "¿Podré gestionar el contenido yo mismo?",
+            answer: "¡Totalmente! En E-commerce tenés autonomía total para productos y precios. En webs institucionales, priorizo el 'Código Puro' para que tu web vuele y sea segura. Para cambios de textos o fotos, yo me encargo de todo en minutos. Así vos te enfocás en vender y yo en que tu plataforma tecnológica sea perfecta."
         },
         {
-            question: "¿Qué incluye el mantenimiento y por qué es necesario?",
-            answer: "Es tu seguro técnico. Incluye el hosting de alta performance, certificado de seguridad SSL, backups semanales y tiempo dedicado para cambios que necesites (precios, fotos, textos). Mi objetivo es que la web nunca se caiga y vuele. Si preferís gestionar tu propio hosting, podés hacerlo, pero perdés mi soporte técnico ante cualquier falla del servidor."
+            question: "¿Qué incluye el servicio de mantenimiento?",
+            answer: "Es la tranquilidad de que tu negocio nunca se detiene. Incluye hosting de alta performance, certificado SSL, copias de seguridad semanales y soporte técnico para cambios. Si surge cualquier duda o actualización, tenés línea directa conmigo. Es como tener un departamento de sistemas a tu disposición."
         },
         {
-            question: "¿Qué pasa si el diseño no me convence?",
-            answer: "No trabajo a ciegas. Antes de programar, definimos una línea estética. Durante el proceso tenés instancias de revisión para ajustar lo que haga falta. La clave es la comunicación: si algo no te cierra, se cambia en el momento."
+            question: "¿Y si el diseño final no me gusta?",
+            answer: "Eso no pasa, porque no hay sorpresas. Antes de tirar una sola línea de código, validamos una línea estética y estructura. El proceso es transparente y colaborativo: ajustamos cada detalle en las instancias de revisión hasta que sientas que la web representa 100% la identidad de tu marca."
         },
         {
-            question: "¿Trabajás con clientes de cualquier lugar?",
-            answer: "Sí, trabajo 100% remoto. Nos manejamos por WhatsApp y videollamadas. Esto me permite ser más ágil, bajar costos y mostrarte avances en vivo sin necesidad de perder tiempo en traslados."
-        },
-        {
-            question: "¿Para quién NO es este servicio?",
-            answer: "Si buscás el presupuesto más barato del mercado o una web de 'copiar y pegar', no soy la opción indicada. Trabajo con negocios que entienden que una web lenta o mal hecha sale cara. Tampoco desarrollo plataformas masivas como redes sociales o clones de Mercado Libre."
+            question: "¿Por qué elegir código personalizado en lugar de plantillas baratas?",
+            answer: "Para dueños de negocio que no quieren una web de 'copiar y pegar' que tarda siglos en cargar. Si buscás el presupuesto más bajo del mercado, quizás no soy tu opción. Si buscás una herramienta profesional que convierta visitas en ventas, no se rompa y posicione mejor que tu competencia, estás en el lugar correcto."
         }
     ];
 
