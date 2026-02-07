@@ -14,7 +14,7 @@ import Home from "@/pages/Home";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 
 const MAINTENANCE_MODE = true;
-let constructionProgress = 15;
+let constructionProgress = 45;
 
 function App() {
   return (
